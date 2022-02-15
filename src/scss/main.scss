@@ -1,23 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700&display=swap');
-// Roots :
-// Farben :
-$backgroundColor : #2B2D5B;
-$inputColor : #232450;
-$greenColor : #00FF00;
-$ausgebenColor : #515FEB;
-$sparenColor : #EFB722;
-$sparenColor : #EFB722;
-$sontigesColor : #95989A;
-
-// Generele Styles
-
-* {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-}
-
 // IMPORTS 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700&display=swap');
+@import './assets';
+
+//Components
+@import "../components/Footer/Footer.scss";
+@import "../components/Header/Header.scss";
+@import "../components/TransactionsList/TransactionsList.scss";
+
+//Pages
+@import "../pages/AddTransaction/AddTransaction.scss";
+@import "../pages/Chart/Chart.scss";
+@import "../pages/Error/Error.scss";
+@import "../pages/Login/Login.scss";
+@import "../pages/Register/Register.scss";
+@import "../pages/Transactions/Transactions.scss";
+@import "../pages/Welcome/Welcome.scss";
