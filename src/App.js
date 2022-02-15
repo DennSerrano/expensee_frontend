@@ -1,14 +1,13 @@
 // Modules Imports
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 // Styling Imports
 import './scss/main.scss';
 
 //Components Imports
 import Header from "./components/Header/Header"
 import Footer from './components/Footer/Footer'
-import DevNav from "./components/devNav.js"
+import DevNav from "./Dev_items/DevNav.js"
 
 //Pages Imports
 import Welcome from "./pages/Welcome/Welcome.js"
@@ -19,26 +18,27 @@ import Transactions from "./pages/Transactions/Transactions.js"
 import AddTransaction from "./pages/AddTransaction/AddTransaction.js"
 import Error from "./pages/Error/Error.js"
 
+// Constant Imports
+import testUser from './Dev_items/testuser';
 
 function App() {
-  const beispielUser = {}
-  const token = 'test'
+
+  const token = 'isFilled'
   return (
     <div className="App">
       <Router>
-        {token && <Header />}
-        <DevNav />
         <Routes>
           <Route path="" element={token ? <Chart /> : <Welcome />} />
           <Route path="addtransaction" element={<AddTransaction />} />
           <Route path="chart" element={<Chart />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
-          <Route path="transactions" element={<Transactions />} />
+          <Route path="transactions" element={<Transactions user={testUser} />} />
           <Route path="*" element={<Error />} />
-
+          <Route path="/welcome" element={<Welcome />} />
         </Routes>
         {token && <Footer />}
+        <DevNav />
       </Router>
     </div >
   );

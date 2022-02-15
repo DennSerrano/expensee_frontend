@@ -1,5 +1,26 @@
 .Transactions{
-    h2{
-        color: red;
+    margin-top: 80px;
+    padding: $sidePadding;
+    overflow: scroll;
+    height: 600px;
+    .transactionsList {
+
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 20px;
+        .showFull {
+            color : $blueText;
+            &:hover {
+                cursor:pointer;
+            }
+        }
+    }
+    .mehr {
+        background-color: $inputColor;
+        margin-top: 20px;
+        width: 100%
     }
 }

@@ -1,22 +1,61 @@
 // Roots :
-// Farben :
+// Colors :
 $backgroundColor : #2B2D5B;
 $inputColor : #232450;
+$blueText : #7C80BC;
 $greenColor : #00FF00;
+$redColor : #F63535;
+$einkommenColor: linear-gradient(90deg, #F63535 0%, #FF009D 100%);
 $ausgebenColor : #515FEB;
 $sparenColor : #EFB722;
 $sparenColor : #EFB722;
 $sontigesColor : #95989A;
 $amountColor : #EFBC2C;
-$h1FontSize : 35px;
+$h1FontSize : 64px;
 $h2FontSize : 25px;
 $h3FontSize : 15px;
 $listItemSpacing : 5px;
+$sidePadding : 20px 10px;
+$appWidth: 400px;
+
+
 
 // Button Shadow
-$buttonShadow : 0px 3px 15px 5px #000000;
+// $buttonShadow : 0px 1px 10px 0px rgba(0,0,0,0.57);
 
-// Generele Styles
+// Button
+.buttonBase {
+  background-color: $backgroundColor;
+  width: 90%;
+  border: none;
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2),
+  1px 1px 2px rgba(0, 0, 0, 0.2),
+  1px -1px 10px rgba(0, 0, 0, 0.2),
+  -1px -1px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px 0;
+  border-radius: 3px;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.1)
+    }
+}
+
+//Input
+.inputStyle{
+  background: #232450;
+  color: $backgroundColor;
+  padding: 15px 0;
+  margin: 10px 0;
+  width: 90%;
+  border-radius: 3px;
+  border: none;
+  &::placeholder{
+    padding-left: 15px;
+  }
+}
+
+// General Styles
+//Deutsch oder Englisch? :P
 
 * {
   box-sizing: border-box;
@@ -25,4 +64,19 @@ $buttonShadow : 0px 3px 15px 5px #000000;
   padding: 0;
   list-style: none;
   text-decoration: none;
+  color: white;
+  max-width: $appWidth;
+}
+
+
+.App {
+    height: 800px;
+    background-color: $backgroundColor;
+    margin: 0 auto;
+}
+
+.wavyImage{
+  background: url("../../public/img/wavy.png") center/contain no-repeat;
+  height: 135px;
+  width: 100%;
 }

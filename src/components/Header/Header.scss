@@ -1,5 +1,27 @@
 .Header{
+    background: linear-gradient(198.49deg, #31326C 0.28%, #2D2E60 84.93%, #242658 181.16%);
+    position: fixed;
+    right: 71.2vw;
+    left: 0;
+    top: 0;
     >h2{
         color: red;
+    }
+    .nav-menu{
+        background: #2B2D5B;
+        position: fixed;
+         top: 0;
+        width: 250px;
+        height: 100vh;
+        // display: flex;
+        // justify-content: center;
+        // position: fixed;
+        // top: 0;
+        left: -100%;
+        transition: 350ms;
+    }
+    .nav-menu-active{
+        left: -100%;
+         transition: 850ms;
     }
 }

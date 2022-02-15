@@ -1,9 +1,13 @@
+import Header from "../../components/Header/Header"
 
 const AddTransaction = () => {
     return (
-        <main className="AddTransaction">
-            <h2>Add Transaction</h2>
-        </main>
+        <div>
+            <Header title={""} />
+            <main className="AddTransaction">
+                <h2>Add Transaction</h2>
+            </main>
+        </div>
     )
 }
 
