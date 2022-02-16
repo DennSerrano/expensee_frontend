@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
+
 const EASS = ({ title, amount, detailList, backColor }) => {
     const [isClicked, setIsClicked] = useState(false)
     return (
@@ -11,7 +13,8 @@ const EASS = ({ title, amount, detailList, backColor }) => {
             {isClicked &&
                 <div className="details">
                     {detailList.map(i =>
-                        <div className="transactionDetails">
+                        <div className="transactionDetails" key={uuidv4()}>
+
                             <p>{i.Beschreibung}</p>
                             <p>{i.Geldbetrag}€</p>
                         </div>

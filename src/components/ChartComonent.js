@@ -30,6 +30,7 @@ const ChartComponent = (props) => {
     return (
         <div className="ChartComponents">
             <Doughnut
+                className="doughnut"
                 data={state}
                 options={{
                     title: {
@@ -43,6 +44,7 @@ const ChartComponent = (props) => {
                     }
                 }}
             />
+            <div className="centerText">{props.sum} €</div>
         </div>
     )
 }

@@ -1,8 +1,8 @@
-export async function submitForm(route, userData) {
+export async function submitUserForm(route, data) {
     const response = await fetch(`http://localhost:9000/user/${route}`, {
         method: 'POST',
         mode: 'cors',
-        body: JSON.stringify(userData),
+        body: JSON.stringify(data),
         headers: {
             "Content-type": "application/json"
         }

@@ -5,11 +5,15 @@
     box-shadow: 0 6px 5px -5px rgb(30, 30, 30);
     left: 0;
     top: 0;
+    z-index: 99;
     .headerNav{
         display:flex;
         padding:3vh 0;
         img{
             padding: 0 2vw 0 2vw;
+            &:hover {
+                cursor:pointer;
+            }
         }
     }
     >h2{
@@ -37,6 +41,9 @@
             position: absolute;
             right:0;
             padding:1vw;
+            &:hover {
+                cursor:pointer;
+            }
       }
       ul{
           margin-top:10vh;
@@ -47,6 +54,6 @@
       }
       img:nth-of-type(2){
 width:100%;
-margin: 35vh 0 0 0;
+margin: 30vh 0 0 0;
     }
 }

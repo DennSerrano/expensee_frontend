@@ -6,7 +6,7 @@ const Chart = (props) => {
         <div>
             <Header title={"Statistik"} />
             <div className="Chart">
-                <ChartComponent userEASS={props.user.EASS} />
+                <ChartComponent userEASS={props.user.EASS} sum={props.user.sumEASS} />
                 <div className="colorDefinitions">
                     <div className="Ered littleCircle"></div>
                     <div className="Einkommen">Einkommen</div>

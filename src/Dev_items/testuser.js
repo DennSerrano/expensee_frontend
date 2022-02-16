@@ -10,6 +10,7 @@ const testUser = {
         Sparen: 12345.33,
         Sonstiges: 9876.99,
     },
+    sumEASS: 5000,
     transactions: [
         {
             transactionId: 0,
