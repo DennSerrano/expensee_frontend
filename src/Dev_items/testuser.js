@@ -5,15 +5,15 @@ const testUser = {
     isAuth: true,
     authCode: '0',
     EASS: {
-        einkommen: 12345.09,
-        ausgaben: 124587.98,
-        sparen: 12345.33,
-        sonstiges: 9876.99,
+        Einkommen: 12345.09,
+        Ausgeben: 14587.98,
+        Sparen: 12345.33,
+        Sonstiges: 9876.99,
     },
     transactions: [
         {
             transactionId: 0,
-            Category: 'einkommen',
+            Category: 'Einkommen',
             Beschreibung: 'Gehalt',
             Geldbetrag: 120.5,
             Datum: '15.2.2022, 11:51:36' // new Date().toLocaleString()
@@ -43,7 +43,7 @@ const testUser = {
             transactionId: 4,
             Category: 'Sontiges',
             Beschreibung: 'Steuer',
-            Geldbetrag: -450,
+            Geldbetrag: -50,
             Datum: '11.2.2022, 17:27:36' // new Date().toLocaleString()
         },
         {
@@ -57,14 +57,28 @@ const testUser = {
             transactionId: 2,
             Category: 'Shopping',
             Beschreibung: 'Jacke',
-            Geldbetrag: -170.23,
+            Geldbetrag: -20.23,
             Datum: '17.2.2022, 11:51:36' // new Date().toLocaleString()
         },
         {
             transactionId: 3,
             Category: 'Wohnung',
             Beschreibung: 'Miete',
-            Geldbetrag: -620,
+            Geldbetrag: -120,
+            Datum: '17.2.2022, 17:27:36' // new Date().toLocaleString()
+        },
+        {
+            transactionId: 2,
+            Category: 'Shopping',
+            Beschreibung: 'Jacke',
+            Geldbetrag: -10.23,
+            Datum: '17.2.2022, 11:51:36' // new Date().toLocaleString()
+        },
+        {
+            transactionId: 3,
+            Category: 'Einkommen',
+            Beschreibung: 'Miete',
+            Geldbetrag: 1620,
             Datum: '17.2.2022, 17:27:36' // new Date().toLocaleString()
         },
         {
@@ -85,7 +99,7 @@ const testUser = {
             transactionId: 2,
             Category: 'Shopping',
             Beschreibung: 'Jacke',
-            Geldbetrag: -170.23,
+            Geldbetrag: -10.23,
             Datum: '17.2.2022, 11:51:36' // new Date().toLocaleString()
         },
         {
@@ -99,7 +113,7 @@ const testUser = {
             transactionId: 2,
             Category: 'Shopping',
             Beschreibung: 'Jacke',
-            Geldbetrag: -170.23,
+            Geldbetrag: -10.23,
             Datum: '17.2.2022, 11:51:36' // new Date().toLocaleString()
         },
         {
@@ -113,28 +127,14 @@ const testUser = {
             transactionId: 2,
             Category: 'Shopping',
             Beschreibung: 'Jacke',
-            Geldbetrag: -170.23,
+            Geldbetrag: -30.23,
             Datum: '17.2.2022, 11:51:36' // new Date().toLocaleString()
         },
         {
             transactionId: 3,
             Category: 'Wohnung',
             Beschreibung: 'Miete',
-            Geldbetrag: -620,
-            Datum: '17.2.2022, 17:27:36' // new Date().toLocaleString()
-        },
-        {
-            transactionId: 2,
-            Category: 'Shopping',
-            Beschreibung: 'Jacke',
-            Geldbetrag: -170.23,
-            Datum: '17.2.2022, 11:51:36' // new Date().toLocaleString()
-        },
-        {
-            transactionId: 3,
-            Category: 'Wohnung',
-            Beschreibung: 'Miete',
-            Geldbetrag: -620,
+            Geldbetrag: -20,
             Datum: '17.2.2022, 17:27:36' // new Date().toLocaleString()
         },
     ]

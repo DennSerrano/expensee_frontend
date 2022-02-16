@@ -47,7 +47,7 @@ const Register = () => {
             />
             <button className="buttonBase">Abschicken</button>
             <article className="wavyImage" />
-            <p>Deine Email ist schon vergeben</p>
+            <p>{response}</p>
             {/* Check ur mail */}
         </main>
     )

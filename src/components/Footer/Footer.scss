@@ -1,19 +1,16 @@
 
 .Footer{
-
-    >h2{
-        color: $greenColor;
-    }
     nav{
+        background: url("../../../public/img/footer.png")  no-repeat;
         position: fixed;
-        // width:clamp(200px, 400px, 800px);
+
         width:100%;
         left: 0;
         right:0;
         bottom: 0;
         padding:2vh 0;
-        border-top: solid 2px black;
-        background: linear-gradient(98.57deg, #31326C -169.69%, #2D2E60 34.09%, #242658 265.73%);
+        //border-top: solid 2px black;
+        //background: linear-gradient(98.57deg, #31326C -169.69%, #2D2E60 34.09%, #242658 265.73%);
 
         display:flex;
         justify-content: space-around;

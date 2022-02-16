@@ -23,17 +23,17 @@ import testUser from './Dev_items/testuser';
 
 function App() {
 
-  const token = 'isFilled'
+  const token = "null"
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="" element={token ? <Chart /> : <Welcome />} />
-          <Route path="addtransaction" element={<AddTransaction />} />
-          <Route path="chart" element={<Chart />} />
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
-          <Route path="transactions" element={<Transactions user={testUser} />} />
+          <Route path="/" element={token ? <Chart /> : <Welcome />} />
+          <Route path="/addtransaction" element={<AddTransaction />} />
+          <Route path="/chart" element={<Chart user={testUser} />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/transactions" element={<Transactions user={testUser} />} />
           <Route path="*" element={<Error />} />
           <Route path="/welcome" element={<Welcome />} />
         </Routes>

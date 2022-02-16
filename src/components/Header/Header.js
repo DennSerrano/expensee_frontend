@@ -1,22 +1,21 @@
 import React from 'react'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react"
 const Header = (props) => {
     const [sidebar, setSidebar] = useState(false)
-
-    const showSidebar = () => setSidebar(sidebar)
-    const closeSidebar = () => setSidebar(!sidebar)
+    const toggleSidebar = () => setSidebar(!sidebar)
+    let history = useNavigate();
     return (
         <header className="Header">
-            <nav>
+            <nav className="headerNav">
                 {props.title === "" ?
-                    <img onClick={showSidebar} src="img/arrow.png" alt="Menu" /> :
-                    <img src="img/burgerMenu.png" alt="menu" />
+                    <img onClick={() => history(-1)} src="img/arrow.png" alt="Menu" /> :
+                    <img onClick={toggleSidebar} src="img/burgerMenu.png" alt="menu" />
                 }
                 <p>{props.title === "" ? "" : props.title}</p>
             </nav>
             <nav className={sidebar ? 'nav-menu-active' : 'nav-menu'}>
-                <img onClick={closeSidebar} src="img/closeVector.png" />
+                <img className="closeX" onClick={toggleSidebar} src="img/closeVector.png" />
                 <ul className={'nav-menu-items'}>
                     <li>
                         <Link to="/chart">

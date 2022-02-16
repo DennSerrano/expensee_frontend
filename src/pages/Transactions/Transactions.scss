@@ -1,8 +1,9 @@
 .Transactions{
     margin-top: 80px;
     padding: $sidePadding;
-    overflow: scroll;
-    height: 600px;
+    background-color: $backgroundColor;
+    // overflow: scroll;
+    // height: 600px;
     .transactionsList {
 
     }
@@ -21,6 +22,7 @@
     .mehr {
         background-color: $inputColor;
         margin-top: 20px;
+        margin-bottom: 110px ;
         width: 100%
     }
 }
