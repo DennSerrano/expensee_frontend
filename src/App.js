@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={token ? <Chart /> : <Welcome />} />
+          <Route path="/" element={token ? <Chart user={testUser} /> : <Welcome />} />
           <Route path="/addtransaction" element={<AddTransaction />} />
           <Route path="/chart" element={<Chart user={testUser} />} />
           <Route path="/login" element={<Login />} />
@@ -38,7 +38,6 @@ function App() {
           <Route path="/welcome" element={<Welcome />} />
         </Routes>
         {token && <Footer />}
-        <DevNav />
       </Router>
     </div >
   );

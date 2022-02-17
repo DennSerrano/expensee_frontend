@@ -13,7 +13,7 @@ const Login = () => {
     async function requestLogin(event) {
         event.preventDefault()
 
-        if (!email.includes("@")) {
+        if (!email.includes("@") || !email.includes(".")) {
             setResponse("Die Email muss vollständig sein")
             return;
         }
@@ -29,14 +29,13 @@ const Login = () => {
 
         // app.post("/user/login", ((req, res) => {
         //    console.log(req.body)
-        //   res.send({ message: "Success", status: "success" })
+        // andere serverlogik
+        //   res.send({ message: "Success", success: true })
         //}))
 
 
         setResponse(response.message)
         return;
-
-
     }
 
     return (
@@ -62,7 +61,7 @@ const Login = () => {
                 onClick={requestLogin}>
                 Abschicken
             </button>
-            <p>{response}  </p>
+            <p>{response}</p>
             <article className="wavyImage" />
         </main>
     )

@@ -16,7 +16,7 @@ const testUser = {
             transactionId: 0,
             Category: 'Einkommen',
             Beschreibung: 'Gehalt',
-            Geldbetrag: 120.5,
+            Geldbetrag: 121,
             Datum: '15.2.2022, 11:51:36' // new Date().toLocaleString()
         },
         {
@@ -78,7 +78,7 @@ const testUser = {
         {
             transactionId: 3,
             Category: 'Einkommen',
-            Beschreibung: 'Miete',
+            Beschreibung: 'Gehalt',
             Geldbetrag: 1620,
             Datum: '17.2.2022, 17:27:36' // new Date().toLocaleString()
         },

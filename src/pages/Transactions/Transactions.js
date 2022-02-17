@@ -5,14 +5,13 @@ import Header from "../../components/Header/Header"
 
 const Transactions = (props) => {
     // states
-    const [numberOfTransactions, setNumberOfTransactions] = useState(7)
+    const [numberOfTransactions, setNumberOfTransactions] = useState(6)
     const [isShowFull, setIsShowFull] = useState(false)
 
-    const user = props.user.transactions.slice(1, numberOfTransactions)
+    const user = props.user.transactions.slice(0, numberOfTransactions)
 
     // functions
     const showFull = () => {
-        console.log(props.user.transactions.length)
         setIsShowFull(!isShowFull)
         if (!isShowFull) {
             setNumberOfTransactions(props.user.transactions.length)
